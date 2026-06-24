@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan</title>
+</head>
+<link rel="stylesheet" href="css/page3.css">
+
+<body>
+    <button type="button" onclick="FanOn()"><h3>ON</h3></button>
+    <button type="button" onclick="FanOff()"><h3>OFF</h3></button>
+    <img src="imgs/Fan.png" class="fan" id="fan-box">
+    <script type="text/javascript">
+        function FanOn(){
+            var f = document.querySelector("#fan-box")
+            f.classList.add("fan-spin")
+        }
+        function FanOff(){
+            var f = document.querySelector("#fan-box")
+            f.classList.remove("fan-spin")
+        }
+    </script>
+</body>
+</html>
