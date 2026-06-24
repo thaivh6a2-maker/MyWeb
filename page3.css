@@ -1,0 +1,30 @@
+.fan img{
+  max-width:500px;
+  text-align: center;
+}
+.fan{
+  width: 300px;
+  margin-top:50px;
+}
+.fan-spin{
+  animation-name: xoay;
+  animation-duration: 150ms;
+  animation-iteration-count: infinite;
+}
+@keyframes xoay{
+  0%{
+    transform:rotate(0deg)
+  }
+  25%{
+    transform:rotate(90deg)
+  }
+  50%{
+    transform:rotate(180deg)
+  }
+  75%{
+    transform:rotate(270deg)
+  }
+  100%{
+    transform:rotate(360deg)
+  }
+}
